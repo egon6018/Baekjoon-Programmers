@@ -4,6 +4,11 @@
 #include <iostream>
 using namespace std;
 
+// 좋은 다른 사람의 풀이방법
+// participant싹 오름차순으로 정렬하고, completion싹 오름차순으로 정렬해서 비교했을때
+// 다르면 완주를 못했다는 뜻이니까
+
+
 unordered_map<string,int> p; // <참가자이름, 일단 참가했으면 1> 만약 동명이인이 있다면 2가 될 것임 => 나중에 완주자들은 0이 될 것임
 
 string solution(vector<string> participant, vector<string> completion) {
